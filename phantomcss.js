@@ -24,6 +24,7 @@ exports.screenshot = screenshot;
 exports.compareAll = compareAll;
 exports.compareMatched = compareMatched;
 exports.init = init;
+exports.getCounter = getCounter;
 exports.update = init;
 exports.turnOffAnimations = turnOffAnimations;
 exports.getExitStatus = getExitStatus;
@@ -80,8 +81,13 @@ function _fileNameGetter(root, fileName){
 	}
 }
 
+function getCounter(){
+	return _count;
+}
+
 function screenshot(selector, timeToWait, hideSelector, fileName){
 	
+
 	if(isNaN(Number(timeToWait)) && typeof timeToWait === 'string'){
 		fileName = timeToWait;
 		timeToWait = void 0;
@@ -93,9 +99,13 @@ function screenshot(selector, timeToWait, hideSelector, fileName){
 		if(hideSelector || _hideElements){
 			casper.evaluate(function(s1, s2){
 				if(s1){
-					$(s1).css('visibility', 'hidden');
+					$(s1).css('border', '1px solid #CCC');
 				}
-				$(s2).css('visibility', 'hidden');
+				if ($('#plDebug')){
+					$('#plDebug').css('display', 'none');
+				}
+
+				$(s2).css('border', '1px solid #CCC');
 			}, {
 				s1: _hideElements,
 				s2: hideSelector
