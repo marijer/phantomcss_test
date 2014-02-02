@@ -1,0 +1,204 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'casperjs' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.19
+4 verbose cache add [ 'casperjs', null ]
+5 verbose cache add name=undefined spec="casperjs" args=["casperjs",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'casperjs',
+6 verbose parsed url   path: 'casperjs',
+6 verbose parsed url   href: 'casperjs' }
+7 silly lockFile 22320dcf-casperjs casperjs
+8 verbose lock casperjs /Users/mrooze/.npm/22320dcf-casperjs.lock
+9 verbose tar pack [ '/Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz',
+9 verbose tar pack   'casperjs' ]
+10 verbose tarball /Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+11 verbose folder casperjs
+12 silly lockFile 4e1b6eb8-tar-casperjs tar://casperjs
+13 verbose lock tar://casperjs /Users/mrooze/.npm/4e1b6eb8-tar-casperjs.lock
+14 silly lockFile 20f1de3a-89026-0-7274787956848741-tmp-tgz tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+15 verbose lock tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz /Users/mrooze/.npm/20f1de3a-89026-0-7274787956848741-tmp-tgz.lock
+16 silly lockFile 4e1b6eb8-tar-casperjs tar://casperjs
+17 silly lockFile 4e1b6eb8-tar-casperjs tar://casperjs
+18 silly lockFile 20f1de3a-89026-0-7274787956848741-tmp-tgz tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+19 silly lockFile 20f1de3a-89026-0-7274787956848741-tmp-tgz tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+20 verbose tar unpack /Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+21 silly lockFile 64f010a0-89026-0-7274787956848741-package tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+22 verbose lock tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package /Users/mrooze/.npm/64f010a0-89026-0-7274787956848741-package.lock
+23 silly lockFile 20f1de3a-89026-0-7274787956848741-tmp-tgz tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+24 verbose lock tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz /Users/mrooze/.npm/20f1de3a-89026-0-7274787956848741-tmp-tgz.lock
+25 silly gunzTarPerm modes [ '755', '644' ]
+26 silly gunzTarPerm extractEntry package.json
+27 silly gunzTarPerm extractEntry README.md
+28 silly gunzTarPerm extractEntry CHANGELOG.md
+29 silly gunzTarPerm extractEntry LICENSE.md
+30 silly gunzTarPerm extractEntry bin/bootstrap.js
+31 silly gunzTarPerm extractEntry modules/casper.js
+32 silly gunzTarPerm extractEntry modules/clientutils.js
+33 silly gunzTarPerm extractEntry modules/colorizer.js
+34 silly gunzTarPerm extractEntry modules/events.js
+35 silly gunzTarPerm extractEntry modules/http.js
+36 silly gunzTarPerm extractEntry modules/cli.js
+37 silly gunzTarPerm extractEntry modules/pagestack.js
+38 silly gunzTarPerm extractEntry modules/querystring.js
+39 silly gunzTarPerm extractEntry modules/tester.js
+40 silly gunzTarPerm extractEntry modules/utils.js
+41 silly gunzTarPerm extractEntry modules/xunit.js
+42 silly gunzTarPerm extractEntry modules/mouse.js
+43 silly gunzTarPerm extractEntry tests/run.js
+44 silly lockFile 64f010a0-89026-0-7274787956848741-package tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+45 silly lockFile 64f010a0-89026-0-7274787956848741-package tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+46 silly lockFile 20f1de3a-89026-0-7274787956848741-tmp-tgz tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+47 silly lockFile 20f1de3a-89026-0-7274787956848741-tmp-tgz tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/tmp.tgz
+48 verbose tar pack [ '/Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz',
+48 verbose tar pack   '/Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package' ]
+49 verbose tarball /Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+50 verbose folder /Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+51 silly lockFile 64f010a0-89026-0-7274787956848741-package tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+52 verbose lock tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package /Users/mrooze/.npm/64f010a0-89026-0-7274787956848741-package.lock
+53 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+54 verbose lock tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz /Users/mrooze/.npm/ff071e9a-m-casperjs-1-1-0-DEV-package-tgz.lock
+55 silly lockFile 64f010a0-89026-0-7274787956848741-package tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+56 silly lockFile 64f010a0-89026-0-7274787956848741-package tar:///Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185289026-0.7274787956848741/package
+57 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+58 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+59 silly lockFile 1925888d-e-npm-casperjs-1-1-0-DEV-package /Users/mrooze/.npm/casperjs/1.1.0-DEV/package
+60 verbose lock /Users/mrooze/.npm/casperjs/1.1.0-DEV/package /Users/mrooze/.npm/1925888d-e-npm-casperjs-1-1-0-DEV-package.lock
+61 silly lockFile 1925888d-e-npm-casperjs-1-1-0-DEV-package /Users/mrooze/.npm/casperjs/1.1.0-DEV/package
+62 silly lockFile 1925888d-e-npm-casperjs-1-1-0-DEV-package /Users/mrooze/.npm/casperjs/1.1.0-DEV/package
+63 verbose tar unpack /Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+64 silly lockFile 146c0b3d-e-npm-casperjs-1-1-0-DEV-package tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package
+65 verbose lock tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package /Users/mrooze/.npm/146c0b3d-e-npm-casperjs-1-1-0-DEV-package.lock
+66 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+67 verbose lock tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz /Users/mrooze/.npm/ff071e9a-m-casperjs-1-1-0-DEV-package-tgz.lock
+68 silly gunzTarPerm modes [ '755', '644' ]
+69 silly gunzTarPerm extractEntry package.json
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm extractEntry CHANGELOG.md
+72 silly gunzTarPerm extractEntry LICENSE.md
+73 silly gunzTarPerm extractEntry bin/bootstrap.js
+74 silly gunzTarPerm extractEntry modules/casper.js
+75 silly gunzTarPerm extractEntry modules/clientutils.js
+76 silly gunzTarPerm extractEntry modules/colorizer.js
+77 silly gunzTarPerm extractEntry modules/events.js
+78 silly gunzTarPerm extractEntry modules/http.js
+79 silly gunzTarPerm extractEntry modules/cli.js
+80 silly gunzTarPerm extractEntry modules/pagestack.js
+81 silly gunzTarPerm extractEntry modules/querystring.js
+82 silly gunzTarPerm extractEntry modules/tester.js
+83 silly gunzTarPerm extractEntry modules/utils.js
+84 silly gunzTarPerm extractEntry modules/xunit.js
+85 silly gunzTarPerm extractEntry modules/mouse.js
+86 silly gunzTarPerm extractEntry tests/run.js
+87 silly lockFile 146c0b3d-e-npm-casperjs-1-1-0-DEV-package tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package
+88 silly lockFile 146c0b3d-e-npm-casperjs-1-1-0-DEV-package tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package
+89 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+90 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+91 verbose chmod /Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz 644
+92 verbose chown /Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz [ 501, 20 ]
+93 silly lockFile 22320dcf-casperjs casperjs
+94 silly lockFile 22320dcf-casperjs casperjs
+95 silly resolved [ { name: 'casperjs',
+95 silly resolved     description: 'Navigation scripting & testing utility for PhantomJS',
+95 silly resolved     version: '1.1.0-DEV',
+95 silly resolved     keywords: [ 'phantomjs', 'javascript' ],
+95 silly resolved     maintainers: [ [Object] ],
+95 silly resolved     dependencies: { 'http://www.phantomjs.org/': 'master' },
+95 silly resolved     bugs: { url: 'https://github.com/n1k0/casperjs/issues' },
+95 silly resolved     repositories: [ [Object] ],
+95 silly resolved     licenses: [ [Object] ],
+95 silly resolved     homepage: 'http://casperjs.org',
+95 silly resolved     readme: '# CasperJS\n\n>**Important note:** the `master` branch hosts the development version of CasperJS, which is now pretty stable and should be the right version to use if you ask me.\n>\n>Use the [`1.0` branch](https://github.com/n1k0/casperjs/tree/1.0) if you want to keep in sync with the stable old version, or [use tagged versions](https://github.com/n1k0/casperjs/tags).\n>\n>Currently, available documentation is:\n>\n>- **hosted on [docs.casperjs.org](http://docs.casperjs.org/) for the development branch**\n>- hosted on [casperjs.org](http://casperjs.org/) for the 1.0 branch\n>\n>[Travis-CI](http://travis-ci.org/n1k0/casperjs) build status:\n>\n>- ![Build Status](https://travis-ci.org/n1k0/casperjs.png?branch=master) `master` branch\n>- 1.0 tests unfortunately have to be run manually using the `casperjs selftest` command\n\nCasperJS is a navigation scripting & testing utility for [PhantomJS](http://www.phantomjs.org/)\nand [SlimerJS](http://slimerjs.org/). It eases the process of defining a full navigation\nscenario and provides useful high-level functions, methods & syntaxic sugar for doing common\ntasks such as:\n\n- defining & ordering [navigation steps](http://casperjs.org/quickstart.html)\n- [filling forms](http://casperjs.org/api.html#casper.fill)\n- [clicking links](http://casperjs.org/api.html#casper.click)\n- [capturing screenshots](http://casperjs.org/api.html#casper.captureSelector) of a page (or an area)\n- [making assertions on remote DOM](http://casperjs.org/api.html#tester)\n- [logging](http://casperjs.org/logging.html) & [events](http://casperjs.org/events-filters.html)\n- [downloading base64](http://casperjs.org/api.html#casper.download) encoded resources, even binary ones\n- catching errors and react accordingly\n- writing [functional test suites](http://casperjs.org/testing.html), exporting results as JUnit XML (xUnit)\n\nBrowse the [sample examples repository](https://github.com/n1k0/casperjs/tree/master/samples).\nDon\'t hesitate to pull request for any cool example of yours as well!\n\n**Read the [full documentation](http://casperjs.org/) on casperjs dedicated website.**\n\nSubscribe to the [project mailing-list](https://groups.google.com/forum/#!forum/casperjs)\n\nFollow the CasperJS project [on twitter](https://twitter.com/casperjs_org) and [Google+](https://plus.google.com/b/106641872690063476159/).\n\n## Show me some code!\n\nSample test to see if some dropdown can be opened:\n\n```javascript\ncasper.test.begin(\'a twitter bootsrap dropdown can be opened\', 2, function(test) {\n    casper.start(\'http://twitter.github.com/bootstrap/javascript.html#dropdowns\', function() {\n        test.assertExists(\'#navbar-example\');\n        this.click(\'#dropdowns .nav-pills .dropdown:last-of-type a.dropdown-toggle\');\n        this.waitUntilVisible(\'#dropdowns .nav-pills .open\', function() {\n            test.pass(\'Dropdown is open\');\n        });\n    }).run(function() {\n        test.done();\n    });\n});\n```\n\nRun the script:\n\n![](http://cl.ly/image/271e2i403A0F/Capture%20d%E2%80%99%C3%A9cran%202013-01-20%20%C3%A0%2009.26.15.png)\n\n##Support\n\nIf you\'re having problems with using the project, use the support forum at CodersClan.\n\n<a href="http://codersclan.net/forum/index.php?repo_id=32"><img src="http://www.codersclan.net/graphics/getSupport_blue_big.png" width="160"></a>\n\n## Contributing\n\n### Contributing code\n\nPlease read the [CONTRIBUTING.md](https://github.com/n1k0/casperjs/blob/master/CONTRIBUTING.md) file contents.\n\n### Contributing documentation\n\nCasperJS\'s documentation is written using the [Markdown format](http://daringfireball.net/projects/markdown/), and hosted on Github thanks to the [Github Pages Feature](http://pages.github.com/).\n\nTo view the source files on github, head to [the gh-pages branch](https://github.com/n1k0/casperjs/tree/gh-pages), and check the [documentation\'s README](https://github.com/n1k0/casperjs/tree/gh-pages#readme) for further instructions.\n',
+95 silly resolved     readmeFilename: 'README.md',
+95 silly resolved     repository: { type: 'git', url: 'git://github.com/n1k0/casperjs.git' },
+95 silly resolved     _id: 'casperjs@1.1.0-DEV',
+95 silly resolved     dist: { shasum: 'e56124655a84ddfb64a7e15017c84fe9f5f8f8d4' },
+95 silly resolved     _from: 'casperjs' } ]
+96 info install casperjs@1.1.0-DEV into /usr/local/lib
+97 info installOne casperjs@1.1.0-DEV
+98 info /usr/local/lib/node_modules/casperjs unbuild
+99 verbose tar unpack /Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+100 silly lockFile e70d31bf--local-lib-node-modules-casperjs tar:///usr/local/lib/node_modules/casperjs
+101 verbose lock tar:///usr/local/lib/node_modules/casperjs /Users/mrooze/.npm/e70d31bf--local-lib-node-modules-casperjs.lock
+102 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+103 verbose lock tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz /Users/mrooze/.npm/ff071e9a-m-casperjs-1-1-0-DEV-package-tgz.lock
+104 silly gunzTarPerm modes [ '755', '644' ]
+105 silly gunzTarPerm extractEntry package.json
+106 silly gunzTarPerm extractEntry README.md
+107 silly gunzTarPerm extractEntry CHANGELOG.md
+108 silly gunzTarPerm extractEntry LICENSE.md
+109 silly gunzTarPerm extractEntry bin/bootstrap.js
+110 silly gunzTarPerm extractEntry modules/casper.js
+111 silly gunzTarPerm extractEntry modules/clientutils.js
+112 silly gunzTarPerm extractEntry modules/colorizer.js
+113 silly gunzTarPerm extractEntry modules/events.js
+114 silly gunzTarPerm extractEntry modules/http.js
+115 silly gunzTarPerm extractEntry modules/cli.js
+116 silly gunzTarPerm extractEntry modules/pagestack.js
+117 silly gunzTarPerm extractEntry modules/querystring.js
+118 silly gunzTarPerm extractEntry modules/tester.js
+119 silly gunzTarPerm extractEntry modules/utils.js
+120 silly gunzTarPerm extractEntry modules/xunit.js
+121 silly gunzTarPerm extractEntry modules/mouse.js
+122 silly gunzTarPerm extractEntry tests/run.js
+123 silly lockFile e70d31bf--local-lib-node-modules-casperjs tar:///usr/local/lib/node_modules/casperjs
+124 silly lockFile e70d31bf--local-lib-node-modules-casperjs tar:///usr/local/lib/node_modules/casperjs
+125 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+126 silly lockFile ff071e9a-m-casperjs-1-1-0-DEV-package-tgz tar:///Users/mrooze/.npm/casperjs/1.1.0-DEV/package.tgz
+127 info preinstall casperjs@1.1.0-DEV
+128 verbose readDependencies using package.json deps
+129 verbose readDependencies using package.json deps
+130 verbose cache add [ 'http://www.phantomjs.org/@master', null ]
+131 verbose cache add name=undefined spec="http://www.phantomjs.org/@master" args=["http://www.phantomjs.org/@master",null]
+132 verbose parsed url { protocol: 'http:',
+132 verbose parsed url   slashes: true,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: 'www.phantomjs.org',
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: 'www.phantomjs.org',
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: '/@master',
+132 verbose parsed url   path: '/@master',
+132 verbose parsed url   href: 'http://www.phantomjs.org/@master' }
+133 silly lockFile abf2fdce-http-www-phantomjs-org-master http://www.phantomjs.org/@master
+134 verbose lock http://www.phantomjs.org/@master /Users/mrooze/.npm/abf2fdce-http-www-phantomjs-org-master.lock
+135 verbose addRemoteTarball [ 'http://www.phantomjs.org/@master', null ]
+136 info retry fetch attempt 1 at 13:49:03
+137 verbose fetch to= /Users/mrooze/tmp/npm-5508-ubl6wVb5/1389185343259-0.7678367404732853/tmp.tgz
+138 http GET http://www.phantomjs.org/@master
+139 http 404 http://www.phantomjs.org/@master
+140 error fetch failed http://www.phantomjs.org/@master
+141 silly lockFile abf2fdce-http-www-phantomjs-org-master http://www.phantomjs.org/@master
+142 silly lockFile abf2fdce-http-www-phantomjs-org-master http://www.phantomjs.org/@master
+143 verbose about to build /usr/local/lib/node_modules/casperjs
+144 info /usr/local/lib/node_modules/casperjs unbuild
+145 info preuninstall casperjs@1.1.0-DEV
+146 info uninstall casperjs@1.1.0-DEV
+147 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild casperjs@1.1.0-DEV
+148 info postuninstall casperjs@1.1.0-DEV
+149 error Error: 404 Not Found
+149 error     at WriteStream.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/fetch.js:57:12)
+149 error     at WriteStream.EventEmitter.emit (events.js:117:20)
+149 error     at fs.js:1596:14
+149 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:103:5
+149 error     at Object.oncomplete (fs.js:107:15)
+150 error If you need help, you may report this log at:
+150 error     <http://github.com/isaacs/npm/issues>
+150 error or email it to:
+150 error     <npm-@googlegroups.com>
+151 error System Darwin 13.0.0
+152 error command "node" "/usr/local/bin/npm" "install" "-g" "casperjs"
+153 error cwd /Users/mrooze/Desktop/proj1/PhantomCSS
+154 error node -v v0.10.19
+155 error npm -v 1.3.11
+156 verbose exit [ 1, true ]
