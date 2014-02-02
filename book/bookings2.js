@@ -6,7 +6,7 @@
 var phantomcss = require('./../phantomcss.js');
 
 // get all new files
-var configure = require('configure-cs.js');
+var configure = require('configure.js');
 
 
 // default arrays

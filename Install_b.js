@@ -16,11 +16,14 @@ $ ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
 
 $ casperjs --version
 
-3. install phantomcss
+3. install phantomcss + custom code
 
-git clone https://github.com/Huddle/PhantomCSS.git
-cd PhantomCSS
+setup a folder somewhere in your directory and insert the next: 
+$git clone https://github.com/marijer/phantomcss_test
+$cd PhantomCSS
 
-4. get Booking files
+4. run it
+
+$ casperjs test book/bookings2.js
 
 

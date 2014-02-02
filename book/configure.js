@@ -1,4 +1,4 @@
-// run in terminal: casperjs test demo/bookings2.js
+// run in terminal: casperjs test book/bookings2.js
 
 /*
 
