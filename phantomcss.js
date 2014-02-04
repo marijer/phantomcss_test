@@ -96,24 +96,42 @@ function screenshot(selector, timeToWait, hideSelector, fileName){
 	casper.captureBase64('png'); // force pre-render
 	casper.wait(timeToWait || 250, function(){
 
+
+	// BOOKING specific -- hides debug bar and sets borders around select boxes to 'ground' them
+	casper.evaluate( function() {
+		
+		if ($('#plDebug')){
+			$('#plDebug').css('display', 'none');
+		}
+
+		if ( $( "select" ) ){
+			$("select" ).css('border', '1px solid #CCC');
+		}
+
+		if ( $( "input:checkbox" ) ){
+			$( "input:checkbox" ).hide();
+		}
+
+	})
+
 		if(hideSelector || _hideElements){
 			casper.evaluate(function(s1, s2){
 				if(s1){
-					$(s1).css('border', '1px solid #CCC');
-				}
-				if ($('#plDebug')){
-					$('#plDebug').css('display', 'none');
+					$(s1).css('visibility', 'hidden');
 				}
 
-				$(s2).css('border', '1px solid #CCC');
-			}, {
-				s1: _hideElements,
-				s2: hideSelector
+				$(s2).css('visibility', 'hidden');
+				}, {
+					s1: _hideElements,
+					s2: hideSelector
 			});
 		}
 
 		try{
 			casper.captureSelector( _fileNameGetter(_root, fileName) , selector);
+
+			// test responsive design
+			//casper.capture(_fileNameGetter(_root, fileName),{top: 0,left: 0,width: 640, height: 300});
 		}
 		catch(ex){
 			console.log("Screenshot FAILED: " + ex.message);

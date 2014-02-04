@@ -12,7 +12,6 @@ var configure = require('configure.js');
 // default arrays
 var allLanguages = ['en-gb', 'en-us', 'de', 'nl', 'fr', 'es', 'ca', 'it', 'pt-pt', 'pt-br', 'no', 'fi', 'sv', 'da', 'cs', 'hu', 'ro', 'ja', 'zh-cn', 'zh-tw', 'pl', 'el', 'ru', 'tr', 'bg', 'ar', 'ko', 'he', 'lv', 'uk', 'id', 'ms', 'th', 'et', 'hr', 'lt', 'sk', 'sr', 'sl', 'vi', 'tl', 'is'];
 var allCurrencies = ['ARS','AUD','AZN','BHD','BRL','BGN','CAD','XOF','CLP','CNY','COP','CZK','DKK','EGP','EUR','FJD','GEL','HKD','HUF','INR','IDR','ILS','JPY','JOD','KZT','KRW','KWD','LVL','LTL','MYR','MXN','MDL','NAD','TWD','NZD','NOK','OMR','PLN','GBP','QAR','RON','RUB','SAR','SGD','ZAR','SEK','CHF','THB','TRY','AED','USD','UAH','VEF'];
-
 var cities = [{ufi:"-2601889",name:"London"},{ufi:"-1456928",name:"Paris"},{ufi:"-126693",name:"Roma"},{ufi:"-782831",name:"Dubai"},{ufi:"-372490",name:"Barcelona"},{ufi:"20088325",name:"New York"},{ufi:"-390625",name:"Madrid"},{ufi:"-2140479",name:"Amsterdam"},{ufi:"-1746443",name:"Berlin"},{ufi:"-755070",name:"Ä°stanbul"},{ufi:"-121726",name:"Milano"},{ufi:"-553173",name:"Prague"},{ufi:"-1829149",name:"MÃ¼nchen"},{ufi:"-1995499",name:"Wien"},{ufi:"20079110",name:"Las Vegas"},{ufi:"-3414440",name:"Bangkok"},{ufi:"-1502554",name:"Dublin"},{ufi:"-73635",name:"Singapore"},{ufi:"-1955538",name:"Brussels"},{ufi:"-2167973",name:"Lisboa"},{ufi:"-1353149",name:"Hong Kong"},{ufi:"-117543",name:"Florence"},{ufi:"-132007",name:"Venice"},{ufi:"-2960561",name:"Moscow"},{ufi:"-1603135",name:"Sydney"}];
 
 var sizes = [
@@ -91,8 +90,7 @@ switch (type) {
 var startUrl = baseUrl + '.en.html';
 
 casper.start(startUrl);
-
-casper.viewport(1200, 768);
+  casper.viewport(1280, 800);
 
 //phantomcss.turnOffAnimations();
 
@@ -144,13 +142,17 @@ casper.each(forEachArr, function(self, item, i) {
           }
     }, function(){
       casper.then(function(){
-         // progress
-         var percentage = Math.round ( ( 100 /totalLength ) * i );
-         console.log( percentage + '%' );
 
-          var hideElements = 'select';
-          this.echo(this.getCurrentUrl());
-          phantomcss.screenshot( screenshotSelection, 500 , hideElements, fileName);
+        if (i === 0){
+          casper.test.info( this.getCurrentUrl() );
+        }
+
+         // progress
+         var percentage = Math.round ( ( 100 /totalLength ) * ( i + 1) );
+         console.log( (i + 1) + "/" + totalLength + ": " +  percentage + '%' );
+
+          var hideElements = settings.hideElements ? settings.hideElements : '' ;
+          phantomcss.screenshot( screenshotSelection, 500, hideElements, fileName);
       });
 
     });
