@@ -108,7 +108,7 @@ var totalLength = forEachArr.length;
 
 casper.each(forEachArr, function(self, item, i) {
 
-  var parameter = param,
+  var parameter = param || '',
       fileName = item;
 
    var url =  baseUrl + '.' + defaultLanguage + '.html';

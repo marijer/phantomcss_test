@@ -8,17 +8,17 @@ test: selected_currency, b_lang, cities, viewport widget , custom
 */
 
 var settings = {
-	title: "hotelpage",
-	screenshotSelection: '.sr_item',  
-	hideElements: '', // you can hide an element for example '.bigbluebutton'
-	baseUrl: 'http://www.booking.com/searchresults',
-	param: 'city=-2601889&ssne=London&ssne_untouched=London&error_url=http%3A%2F%2Fwww.booking.com%2Fhotel%2Fgb%2Fcrownplazalondonstjames.en-gb.html%3Faid%3D379709%3Bsid%3D2077cf6930795b123effce25d6ad4b48%3Bdcid%3D1%3Bcheckin_monthday%3D2%3Bcheckin_year_month%3D2014-3%3Bcheckout_monthday%3D3%3Bcheckout_year_month%3D2014-3%3Bdist%3D0%3Bdo_availability_check%3D1%3Bhp_group_set%3D0%3Btype%3Dtotal%3B&highlighted_hotels=124268&src=hotel&aid=379709&dcid=1&sid=2077cf6930795b123effce25d6ad4b48&si=ai%2Cco%2Cci%2Cre%2Cdi&ss=London&checkin_monthday=2&checkin_year_month=2014-3&checkout_monthday=3&checkout_year_month=2014-3&interval_of_time=any&flex_checkin_year_month=any&sb_predefined_group_options_value=2&no_rooms=1&group_adults=2&group_children=0&dest_type=city&dest_id=-2601889&b_site_experiment_sr_less_rooms=1',
+	title: "booking index popular",  // this will create a folder in screenshots with that name
+	screenshotSelection: '#popularDestinations',  // html element you want a screenshot off, eg 'body', '#searchbox' or '.b-popular_list'
+	hideElement: '', // you can hide an element for example '.bigbluebutton'
+	baseUrl: 'http://booking.com/index',
+	param: 'checkin_monthday=1',
 	test: {
-		type: 'cities',
-		//parameter: 'cities'
-		//: ['-32424', 'ar', 'nl'] 
+		type: 'b_lang',
+		extensionName: 'superman'
 	}
 }
+
 
 exports.settings = settings;
 
